@@ -1,0 +1,54 @@
+/*  this style sheet goes with medium.htm  */
+
+body {
+	margin: 0;
+	background-color: #666666;
+	font-family: verdana, geneva, arial, sans-serif;
+	color: #FFFFFF;
+	}
+
+.page-heading {
+	background-color: #000000;  /* background is black */
+	}
+
+.page-heading h1 {         /*  affects ONLY the h1 elements in THIS class  */
+	margin: 10px 5px 0 5px;
+	padding: 0;
+	text-align: center;
+	}
+
+.nav {
+	background-color: #0000CC;  /* background is blue */
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 15px;
+	vertical-align: top;
+	}
+
+.maintext {
+	background-color: #FFFFFF;  /* background is white */
+	color: #000000;
+	font-size: 11px;
+	padding: 20px 40px;
+	border: 12px double #000066;
+	}
+
+.footer  {
+	background-color: #CC0000;  /* background is red */
+	font-size: 9px;
+	padding: 5px 40px;
+	border-left: 12px solid #CC0000;
+	border-right: 12px solid #CC0000;
+	}
+
+a {
+	color: #CCCCCC; 
+	text-decoration: underline;
+	background-color: transparent;
+	}
+
+a:hover {
+	color: #FFFFFF; 
+	text-decoration: none; 
+	background-color: #000066;
+	}

@@ -1,0 +1,23 @@
+@import url("/styles/css24.css");
+
+/* This is a dummy stylesheet for Netscape 4. */
+
+body { color: black; background-color: white;  }
+a:link { text-decoration: none;
+         color: blue; }
+a:visited { text-decoration: none;
+            color: purple; }
+
+#mainnav { text-align: center; }
+
+#indicia { font-size: small; }
+
+.sidehead { font-weight: bold; margin-top: 0.4em;
+            color: #000033; }
+.instructions { font-style: italic; }
+
+      #content {
+              margin-left: 10em;
+              margin-right: 10em;
+               }
+

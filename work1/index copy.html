@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="List of useful resources">
+    <meta name="keywords" content="html5, css, sass, javascript, nodejs">
+    <meta name="author" content="John Vincent">
+    <title>Cloud Developer</title>
+
+<!--
+   based on
+   http://codingheroes.io/resources/
+
+http://bootsnipp.com/snippets/featured/navbar-search-add-on-bs-3
+
+-->
+
+<!-- Steps
+1. Basic HTML - no semantics; skeleton.
+1. Proper tags; button,
+2. Semantic tags; Header, Nav, main, Section, Article, Aside, Footer, figure, figcaption
+3. Roles; ContentInfo, PresentationInfo, Search,
+4. Choose fonts
+5. font-size
+5a. font-weight;
+6. microdata
+7. favicon
+
+6. test all links
+
+20. google analytics
+
+100. push to Github Pages
+-->
+
+   <!-- look up your libs
+https://cdnjs.com/
+-->
+
+    <!-- HTML5 Semantics: http://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+    <!-- Check HTML5 semantics: https://gsnedders.html5.org/outliner/ -->
+
+    <!-- for microdata usage: http://schema.org/ -->
+    <!--
+itemscope itemtype="http://schema.org/JobPosting"
+itemprop="datePosted">June 22
+itemprop="title">Technical Project Manager
+itemprop="jobLocation">Midtown East
+-->
+
+    <!-- Google Structured Data Testing Tool: https://search.google.com/structured-data/testing-tool/u/0/ -->
+
+    <!-- for favicon generator; http://realfavicongenerator.net/
+use: /resources/favicons
+-->
+
+    <!-- for ARIA in HTML: https://www.w3.org/TR/html-aria/ -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.css">
+
+    <!-- load Google fonts: https://fonts.google.com -->
+    <link href="https://fonts.google.com/?selection.family=Roboto:300,400,500" rel="stylesheet">
+
+    <!-- is this needed -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+    <!-- load my own stylesheets -->
+    <link rel="stylesheet" href="./resources/css/float-grid.css">
+    <link rel="stylesheet" href="./resources/css/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./resources/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./resources/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./resources/favicons/manifest.json">
+    <link rel="mask-icon" href="./resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./resources/favicons/favicon.ico">
+    <meta name="msapplication-config" content="./resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="container-fluid">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Cloud Developer</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Play
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">HTML</a></li>
+                    <li><a tabindex="-1" href="#">CSS</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                            <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                    <li><a href="#">3rd level dropdown</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</nav>
+        <div class="js--main-image jumbotron"></div>
+    </header>
+
+<!--
+    <nav class="js--main-nav main-nav" role="navigation">
+    </nav>
+-->
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="input-group">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">All</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#contains">Example 1</a></li>
+                          <li><a href="#its_equal">Example 2</a></li>
+                          <li><a href="#greather_than">Example 3</a></li>
+                          <li><a href="#less_than">Example 4</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#all">All</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main role="main">
+
+        <section id="js--groups">
+        </section>
+
+    </main>
+
+    <footer class="container-fluid text-center">
+        <hr/>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="/">© 2016 Cloud Development</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    <script src="./vendors/bootstrap/js/bootstrap.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="./resources/js/model.js"></script>
+    <script src="./resources/js/data.js"></script>
+
+    <script src="./resources/js/data/bootstrap.js"></script>
+    <script src="./resources/js/data/diagram-tools.js"></script>
+    <script src="./resources/js/data/blogs-communities.js"></script>
+    <script src="./resources/js/data/cdn.js"></script>
+    <script src="./resources/js/data/cloud.js"></script>
+    <script src="./resources/js/data/colors-tools.js"></script>
+    <script src="./resources/js/data/css3.js"></script>
+    <script src="./resources/js/data/code-sites.js"></script>
+    <script src="./resources/js/data/deployment.js"></script>
+    <script src="./resources/js/data/design-inspiration.js"></script>
+    <script src="./resources/js/data/fonts.js"></script>
+    <script src="./resources/js/data/game-assets.js"></script>
+    <script src="./resources/js/data/html5.js"></script>
+    <script src="./resources/js/data/icons-tools.js"></script>
+    <script src="./resources/js/data/images-videos.js"></script>
+    <script src="./resources/js/data/javascript.js"></script>
+    <script src="./resources/js/data/documentation-tools.js"></script>
+    <script src="./resources/js/data/node.js"></script>
+    <script src="./resources/js/data/nosql.js"></script>
+    <script src="./resources/js/data/npm.js"></script>
+    <script src="./resources/js/data/planning-testing-optimization-deployment.js"></script>
+    <script src="./resources/js/data/sass.js"></script>
+    <script src="./resources/js/data/web-components.js"></script>
+
+    <script src="./resources/js/views.js"></script>
+    <script src="./resources/js/app.js"></script>
+
+<script>
+$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+        e.preventDefault();
+        var param = $(this).attr("href").replace("#","");
+        var concept = $(this).text();
+        $('.search-panel span#search_concept').text(concept);
+        $('.input-group #search_param').val(param);
+    });
+});
+</script>
+
+</body>
+
+</html>
+
+
+<!--
+
+    <header class="container-fluid">
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="my-brand" class="navbar-brand" href="#">Cloud Developer</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-right navbar-nav">
+                        <li><a class="js--nav-home" href="#">Home</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="divider"></li>
+
+                                <li class="dropdown-submenu pull-left">
+                                    <a class="test" tabindex="-1" href="#">More options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+
+                                        <li class="dropdown-submenu pull-left">
+                                          <a href="#" tabindex="-1">Floor Lamps</a>
+                                          <ul class="dropdown-menu">
+                                              <li><a href="#">Living Room</a></li>
+                                              <li><a href="#">Bed Room</a></li>
+                                              <li><a href="#">Garden Lamps</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+                        <li><a class="js--nav-aboutus" href="#">About Us</a></li>
+                    </ul>
+
+                    <div class="col-sm-3 col-md-3 pull-right">
+                        <form class="navbar-form js--search" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control js--search-field" placeholder="Search technology" name="srch-term" id="srch-term">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="js--main-image jumbotron"></div>
+    </header>
+-->

@@ -1,0 +1,90 @@
+/*  this style sheet goes with highskill.htm  */
+
+body {
+	margin: 30px 0;
+	background-color: #CC66CC;
+	font-family: verdana, geneva, arial, sans-serif;
+	color: #CC99CC;
+	}
+
+ul {
+	list-style: square;
+	}
+
+p {
+	margin: 8px 0;
+	}
+
+.page-heading {
+	background-color: #660066;
+	}
+
+.page-heading h1 {         /*  affects ONLY the h1 elements in THIS class  */
+	margin: 30px 5px 8px 5px;
+	padding: 0;
+	text-align: center;
+	font-size: 30px;
+	}
+
+.nav {
+	width: 20%;
+	background-color: #660066;
+	text-align: right;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 5px;
+	vertical-align: top;
+	}
+
+.nav h2 {         /*  affects ONLY the h2 elements in THIS class  */
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0 0 5px 0;
+	}
+
+.maintext {
+	width: 80%;
+	background-color: #FFCCFF;
+	color: #660066;
+	font-size: 11px;
+	padding: 10px 30px;
+	border-right: 2px solid #660066;
+	}
+
+.footer  {
+	background-color: #CC99CC;
+	color: #660066;
+	font-size: 9px;
+	padding: 3px 30px;
+	border-right: 2px solid #660066;
+	border-bottom: 2px solid #660066;
+	}
+
+a {
+	color: #993399; 
+	text-decoration: underline;
+	background-color: transparent;
+	}
+
+a:hover {
+	color: #FFCCFF; 
+	text-decoration: none; 
+	background-color: #993399;
+	}
+
+.nav a {         /*  affects ONLY the link elements in THIS class  */
+	display: block;
+	margin: 0;
+	padding: 3px;
+	color: #FFCCFF; 
+	text-decoration: underline;
+	background-color: transparent;
+	}
+
+.nav a:hover {   /*  affects ONLY the link elements in THIS class  */
+	color: #993399; 
+	text-decoration: none; 
+	background-color: #FFCCFF;
+	}

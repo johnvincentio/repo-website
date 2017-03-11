@@ -1,0 +1,431 @@
+/* ----------------------------------- */
+/* Reusable components */
+/* ----------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ----------------------------------- */
+/* Headings */
+/* ----------------------------------- */
+
+h1, h2, h3 {
+
+}
+
+h1 {
+
+}
+
+h2:before {
+
+}
+
+h2:after {
+
+}
+
+/* ------------ Paragraphs ------------------------ */
+
+.long-copy {
+
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ------------ Icons ------------------------ */
+
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    /*
+     * secrets to align text and icons
+     *
+     */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ------------ Links ------------------------ */
+
+a:link,
+a:visited {
+    color: #e67E22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67E22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+
+}
+
+/* ------------ Buttons ------------------------ */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s border 0.2s color 0.2s;
+    transition: background-color 0.2s border 0.2s color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]  {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/* -------------- Header --------------------- */
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.logo, .logo-black {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* ----------------------Main navigation ----------------------*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* ----------- Mobile navigation ------------------- */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/*
+Inheritance is about how properties trickle down from an element to its children. Certain properties, like font-family inherit.
+
+The cascade is about what take precedence when there is a conflict. The rules of the cascade include:
+
+inline styles win over external and importance.
+
+Later properties override earlier properties
+More specific selectors override less specific selectors
+Specified properties override inherited properties
+And so on. The cascade solves any conflict situations. It is the order in which properties are applied.
+*/
+
+/*
+background-color: #ff0000;
+background-color: rgb(255, 0, 0);    red, green, blue
+background-color: rgba(255, 0, 0, 0.3);    red with opacity
+0.0 (fully transparent) and 1.0 (fully opaque)
+background-color: hsl(120, 100%, 50%);    green
+background-color: hsla(120, 100%, 50%, 0.3);    green with opacity
+
+background-image: url("gradient_bg.png")
+background-repeat: repeat-x;    also repeat-y
+background-repeat: no-repeat;
+background-position: right top;
+background-attachment: fixed;
+*/
+
+/*
+* {margin: 0; padding: 0};
+
+can use * anywhere
+
+.my-class {};
+#my-id {};
+div b { color: green; }  all descendants
+div > b { color: red; }  direct descendant/child
+
+Order of pseudo classes is important:
+a:link { color: red; }   not yet clicked on
+a:visited { color: purple; }  already clicked
+a:hover { color: green; }   mouse over link
+a:active { color: yellow; }  selected link
+
+ul + p {color: red;}  adjacent selector, only first p after </ul>
+
+ul ~ p {color: red;}  any p elements that follow ul, not before the ul
+
+a[title] {color: green;}  a tag with attr title, <a href="#" title="Some title">consectetur</a>
+
+a[href="http://www.jv2351.com"] {color: green;}  green if www.jv2351.com
+
+a[href*="jv2351"] {color: red;}  href containing jv2351
+
+a[href^="http"] {color: red;)  starts with http
+
+a[href$=".jpg"] {color: red;}  ends with .jpg
+
+a[data-filetype="image"] {color: red;}   custom attribute data-filetype = "image"
+
+a[data-info~="external"] {color: red;}
+a[data-info~="image"] {border: 1px solid black;}
+<a href="path/to/image.jpg" data-info="external image"> Click Me, Fool </a>
+will be red with the solid black border
+
+input[type=radio]:checked {border: 1px solid black;}  element that has been checked.
+
+input[type=radio]:checked + label {color: blue;}
+<input type="radio" name="rad" value="Radio Button">
+<label for="rad"> Radio Button</label>
+radio button and label are blue if radio is checked.
+
+p:before
+p:after
+
+div:hover {border-bottom: 1px solid black;}  text-decoration: none;
+
+div:not(#container) {color: blue;}  alls div except for div with id=container
+div:not(p) {color: blue;}    alls div except for p elements
+
+p::first-line {font-weight: bold; font-size: 1.2em;}
+
+p::first-letter {
+    text-transform: uppercase;
+    color: red;
+   float: left;
+   font-size: 2em;
+   font-weight: bold;
+   font-family: cursive;
+   padding-right: 2px;
+}
+
+li:nth-child(2) {color: red;}   second li child element, not zero based
+li:nth-last-child(2) {color: red;}  second to last li child element, not zero based
+
+ul:nth-of-type(3) {border: 1px solid black;}  3rd instance of type ul
+ul:nth-last-of-type(3) {border: 1px solid black;} 3rd to last instance of type ul
+
+ul li:first-child {border-top: none;}  first li child of element ul
+ul li:last-child {border-top: none;}  last li child of element ul
+no borders on top or bottom of a list.
+
+div p:only-child {color: red;}  if p is the only child of div
+
+div p:only-of-type {color: red;}  only single p child of div
+li:only-of-type {font-weight: bold;}  only single li child
+
+ul:first-of-type > li:nth-child(2) {font-weight: bold;}
+second li child of the first ul element
+
+tooltip:
+p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+div:hover p {
+    display: block;
+}
+
+box-sizing:
+content-box (default)
+border-box
+padding-box
+
+2 bordered boxes side by side:
+div {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+
+*/
+
+
+
+
+
+//#header {
+//    height: $header-height;
+//}
+//h1 {
+//   font-size: $header-size;
+//   color: $header-color;
+//}
+//
+//h2 {
+//   font-size: $header-size - 7px;
+//   color: $header-color;
+//}
+//
+//a {
+//    color: $link-color;
+//}
+//
+//p {
+//    width: 200px;
+//    height: 50px;
+//    @extend %textOverflow;
+//    @include horizontalGradient(#FFC, #000);
+//    clear: left;
+//    @extend %center;
+//}
+//
+// .image {
+//
+//     float: left;
+//
+//     background-color: #ececec;
+//     border: 1px solid #ccc;
+//     padding: 10px;
+//     text-align: center;
+//
+//     @media (max-width: 640px)
+//     {
+//         @include generateRow(2, 8%);
+//     }
+//     @media (min-width: 641px) and (max-width: 1200px)
+//     {
+//         @include generateRow(4, 3%);
+//     }
+//     @media (min-width: 1201px)
+//     {
+//         @include generateRow(5, 2%);
+//     }
+//
+//     box-sizing: border-box;
+//     img
+//     {
+//         width: 100%;
+//     }
+//     .image-description
+//     {
+//         color: #555;
+//     }
+// }
+
+//@include small-box(red);
+//@include small-box(pink);
+//@include small-box(yellow);
+//@include small-box(black);
+//
+//// Lists
+//
+//$header-list: h1 h2 h3 h4 h5 h6 'something-else';
+//@each $current-header in $header-list {
+//    $i: index($header-list, $current-header) + 2;
+//    #{$current-header} {
+//        font-size: 55px - $i * 3;
+//    }
+//}
+
+// looping h1 to h7, changing the font-size.
+// use interplotation of string
+
+//@for $i from 1 to 7 {
+//    h#{$i} {
+//        font-size: 55px - $i * 4;
+//    }
+//}
+
+

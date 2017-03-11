@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="me.css">
+  <link rel="stylesheet" href="1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+<div id="template-top-nav"></div>
+
+<div id="template-1"></div>
+
+<script>
+
+function buildHtml(html) {
+    var start = html.indexOf('{{{');
+    console.log("start "+start);
+    if (start < 0) return html;
+    var end = html.indexOf('}}}', start);
+    if (end < 0) return html;
+
+    var replace = html.substring(start, end + 3);
+    var template = html.substring(start + 3, end);
+    console.log("replace :"+replace+": template :"+template+":");
+
+    var myHtml = document.getElementById(template).innerHTML;
+    var newHtml = html.replace(replace, myHtml);
+
+    return buildHtml(newHtml);
+}
+
+$(function() {
+    $('#template-top-nav').html(buildHtml(document.getElementById('menu-1a').innerHTML));
+
+//    $('#template-1').html(buildHtml(document.getElementById('advanced-dropdown-2').innerHTML));
+});
+</script>
+
+</body>
+
+<script type="text/template" id="menu-1a">
+<header class="container-fluid">
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="my-brand" class="navbar-brand" href="#">Cloud Developer</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-right navbar-nav">
+                    <li><a class="js--nav-home" href="#">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li class="divider"></li>
+
+                            <li class="dropdown-submenu pull-left">
+                                <a class="test" tabindex="-1" href="#">More options</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action 1</a></li>
+                                    <li><a href="#">Action 2</a></li>
+
+                                    <li class="dropdown-submenu pull-left">
+                                      <a href="#" tabindex="-1">Floor Lamps</a>
+                                      <ul class="dropdown-menu">
+                                          <li><a href="#">Living Room</a></li>
+                                          <li><a href="#">Bed Room</a></li>
+                                          <li><a href="#">Garden Lamps</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
+                    <li><a class="js--nav-aboutus" href="#">About Us</a></li>
+                </ul>
+
+        <div class="col-xs-4 col-sm-6 col-md-3 pull-left">
+
+            <div class="input-group" id="adv-search">
+<!--
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+-->
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="caret"></span>
+    </button>
+
+
+                            <ul class="dropdown-menu" dropdown-menu-right role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="divider"></li>
+
+                                <li class="dropdown-submenu pull-left">
+                                    <a class="test" tabindex="-1" href="#">More options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+
+                                        <li class="dropdown-submenu pull-left">
+                                          <a href="#" tabindex="-1">Floor Lamps</a>
+                                          <ul class="dropdown-menu">
+                                              <li><a href="#">Living Room</a></li>
+                                              <li><a href="#">Bed Room</a></li>
+                                              <li><a href="#">Garden Lamps</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                            </ul>
+
+                        </div>
+
+<input type="text" class="form-control" placeholder="Search for snippets" />
+
+                        <button type="button" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!--
+                <div class="col-sm-3 col-md-3 pull-right">
+                    <form class="navbar-form js--search" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control js--search-field" placeholder="Search technology" name="srch-term" id="srch-term">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+-->
+            </div>
+        </div>
+    </nav>
+    <div class="js--main-image jumbotron" data-item-id="SK-C-374"></div>
+</header>
+</script>
+
+
+</html>

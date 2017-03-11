@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Position Examples: Relative</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+body 	{ margin: 30px; 
+	  color: black; 
+	  background: #FFCC33;  
+	  font-family:  verdana, geneva, arial, sans-serif; }
+.pictureblock {
+	width: 170px;
+	height: 200px;
+	margin: 5px;
+}
+.caption { text-align: left; background-color: white; padding: 10px; }
+.followtext { clear: left; }
+div#p1 {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+div#p2 {
+	position: relative;
+	left: 200px;
+	top: -150px;
+}
+div#p3 {
+	position: relative;
+	left: 400px;
+	top: -300px;
+}
+div#p4 {
+	position: relative;
+	left: 600px;
+	top: -450px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1> Relative Position Examples </h1>
+
+<p>Each picture-caption pair is enclosed in a &lt;DIV&gt; tag. Each one has an 
+  ID that allows it to be positioned. Compare with the <a href="position.htm">absolute 
+  position</a> examples. &gt; <a href="index.htm">CSS Examples Index</a></p>
+
+<div id="p1" class="pictureblock"> 
+  <img src="../images/books.gif" width="150" height="95"> 
+  <p class="caption"> Books take up a lot of space. </p>
+</div>
+
+<div id="p2" class="pictureblock"> 
+  <img src="../images/pc.gif" width="107" height="110"> 
+  <p class="caption"> PCs are almost a necessity. </p>
+</div>
+
+<div id="p3" class="pictureblock"> 
+  <img src="../images/phone.gif" width="120" height="93"> 
+  <p class="caption"> The telephone can be a nuisance. </p>
+</div>
+
+<div id="p4" class="pictureblock"> 
+  <img src="../images/tv.gif" width="96" height="110"> 
+  <p class="caption"> TV can consume all your free time. </p>
+</div>
+
+</body>
+</html>
+

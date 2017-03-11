@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Photo Layout Example 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+body { 
+	margin: 0; 
+	color: #663300; 
+	font-family: verdana, helvetica, arial, sans-serif;
+	background-color: #CCCC99; 
+	}
+a { padding-right: 5px; }
+a:link 		{ color: #996600; }
+a:visited 	{ color: #996600; }
+a:active 	{ color: #996600; }
+a:hover		{ color: #666633; }
+/* special buttons below */
+.button a { 
+	display: block; 
+	float: left;
+	margin: 20px 5px 0 0; 
+	padding: 6px 10px;
+	font-size: 11px;
+	} 
+/* above makes hover and hot spot encompass entire td space */
+.button a:link, .button a:visited, .button a:active { 
+	background-color: #CCCC99;
+	color: #666633; 
+	text-decoration: none; 
+	border: 1px solid #666633;
+	}
+.button a:hover { 
+	background-color: #666633;
+	color: #FFFFCC; 
+	text-decoration: underline; 
+	border: 1px solid #FFFFCC;
+	}
+.buttonoff { 
+	display: block; 
+	float: left;
+	margin: 20px 5px 0 0; 
+	padding: 6px 10px;
+	font-size: 11px;
+	background-color: transparent;
+	color: #FFFFCC; 
+	text-decoration: none; 
+	border: 1px solid #FFFFCC;
+	} 
+/* special buttons above */
+#toprow {
+	height: 136px;
+	background-image: url(images/banyan029.jpg);
+	background-repeat: no-repeat;
+	background-color: #666633; 
+	padding: 20px;
+	margin: 0;
+	border-bottom: 1px solid #666633;
+	}
+#toprow h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #FFFFCC;
+	margin: 0;
+	padding: 0;
+	}
+#maincontent {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+ 	}
+.pagetext {
+	float: none;
+	margin-top: 10px;
+	margin-left: 200px;
+	width: 400px;
+	padding: 15px 10px 15px 15px;
+	background-color: #666633;
+	color: #FFFFCC;
+	font-size: 11px;
+	line-height: 16px;
+	border: 1px solid #333300;
+	}
+.pagetext p {
+	margin: 10px;
+	}
+.bottomtext {
+	float: none;
+	margin-top: 10px;	
+	margin-left: 200px;
+	font-size: 11px;
+	}
+</style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id="toprow"><h1>Page Layout Example No. 2</h1>
+	  <div class="button"><a href="index.htm">Home</a> <a href="layout01.htm">Link1</a> 
+        <div class="buttonoff">Link2</div> 
+        <a href="layout03.htm">Link3</a> <a href="contact.htm">Contact</a></div>
+	</td>
+  </tr>
+  <tr>
+    <td id="maincontent">
+	  <div class="pagetext"> 
+        <p>In this example, you have a two-row table. The height is set in the 
+          CSS for the first row only. A background image is specified for the 
+          first row; the image is 1280 pixels wide and set to no-repeat.</p>
+        <p>Both this block of text and the one below it are DIVs with CSS-specified 
+          left margins and width.</p>
+      </div>	  
+      <div class="bottomtext">Copyright &copy; 2004 <a href="http://mindymcadams.com/">Mindy 
+        McAdams</a></div>
+		</td>
+  </tr>
+</table>
+
+</body>
+</html>

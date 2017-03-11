@@ -1,0 +1,213 @@
+/* css24.css
+   Style Sheet for www.cssin24hours.com Web Site
+   Copyright 2002 by Kynn Bartlett <kynn@cssin24hours.com>
+   Last Update 25 July 2002
+*/
+
+      body { padding: 0em; margin: 0em; color: black;
+             background-color: white; 
+             background-image: url("/graphics/topfade.jpg");
+             background-position: top left;
+             background-repeat: repeat-x;
+             background-attachment: fixed;
+             font-family: Arial, sans-serif; 
+             border-left: 1em solid red;
+             }
+      a:link { text-decoration: none;
+               color: blue; }
+      a:visited { text-decoration: none;
+                  color: purple; }
+      a:hover { text-decoration: underline; 
+                color: red; }
+      ul { list-style-type: square; }
+      #pagehead { position: fixed; 
+                  background-image: url("/graphics/topfade.jpg");
+                  background-position: top left;
+                  background-repeat: repeat-x;
+                  background-color: white;
+                  background-attachment: fixed;
+                  width: 100%;
+                  top: 0em; left: 0em;
+                  font-family: Arial, sans-serif;
+                  border-left: 1em solid red;
+                  z-index: 5; }
+      #tophead { 
+              width: 100%;
+              font-family: Arial, sans-serif;
+              color: #222255;
+              padding-left: 1em;
+              font-weight: bold; 
+              z-index: 5; }
+      #toph1 { font-size: 1.5em;
+                        font-family: Arial, sans-serif;
+               vertical-align: 1.25em;
+               font-style: oblique;
+               color: #222255;
+               border-top: 1px solid black; }
+      #toph2 { font-size: 4em; 
+               font-family: Verdana, Arial, sans-serif;
+               color: #FFFF66;
+               font-weight: 900; }
+      #toph3 { font-size: 1.5em; 
+               font-style: oblique;
+               font-family: Arial, sans-serif; }
+      #toph4 { font-size: 3em; 
+               color: white;
+               font-style: oblique;
+               font-family: Arial, sans-serif; }
+      #toph5 { font-size: 1.5em; 
+               position: relative;
+               top: 0.5em;
+               left: -2.5em;
+               font-style: oblique;
+               font-family: Arial, sans-serif; }
+      #toph6 { font-size: 1em; color: #222255; 
+               top: 5em;
+               font-family: Arial, sans-serif; 
+               position: absolute; left: 1em;}
+      #tophead a:link { text-decoration: none;
+                        color: #222255; }
+      #tophead a:visited { text-decoration: none;
+                           color: #222255; }
+      #tophead a:hover { text-decoration: underline;
+                         color: white; }
+      #mainnav { margin-top: 1em;
+                 width: 100%;
+                 color: black;
+                 text-align: center; 
+                 z-index: 6; }
+      #mainnav a:link { text-decoration: none;
+                        color: black; }
+      #mainnav a:visited { text-decoration: none;
+                           color: black; }
+      #mainnav a:hover { text-decoration: underline;
+                         color: #CC0000; }
+      #main { padding-top: 8em;
+              z-index: 1; } 
+      #content { 
+              margin-left: 10em; 
+              margin-right: 10em; 
+              font-family: Garamond, serif; 
+               }
+      .navbar { font-family: Arial, sans-serif; }
+      #content h1, #content h2, #content h3, #content h4,
+                   #content h5, #content h6 {
+                 color: #222255;
+                 font-family: Arial, sans-serif; }
+      #chapbar { position: absolute;
+                 top: 7.5em;
+                 right: 2em; 
+                 width: 4em; 
+                 z-index: 10; }
+      #chapbar a:link { color: white; text-decoration: none; }
+      #chapbar a:visited { color: white; text-decoration: none; }
+      #chapbar a:hover { color: black; text-decoration: none; 
+                         border-left-color: gray;
+                         border-top-color: gray;
+                         border-right-color: black;
+                         border-bottom-color: black; }
+      .chaphead { display: none; font-size: small;
+                  font-family: Arial, sans-serif;
+                  font-weight: bold;
+                  color: black; background-color: white; 
+                  text-align: center;
+                  margin-top: 0.2em;
+                  margin-bottom: 0.2em; }
+      .chapter { 
+                 cursor: crosshair;
+                 display: block;
+                 margin-right: 0.85em;
+                 margin-left: 0.85em;
+                 font-size: small;
+                 font-family: Arial, sans-serif;  
+                 color: white;
+                 font-weight: bold;
+                 text-align: center;
+                 background-color: gray; 
+                 margin-top: 0.2em; 
+                 margin-bottom: 0.2em; 
+                 border-top: 1px solid silver;
+                 border-left: 1px solid silver;
+                 border-right: 1px solid gray; 
+                 border-bottom: 1px solid gray; }
+      .hide { display: none; }
+      #i { background-color: #000000;
+           margin-right: 0.2em; margin-left: 0.2em; }
+
+      #i:hover { background-color: white; color: black; }
+      #ch1 { background-color: #00CC00; }
+      #ch2 { background-color: #00CC33; }
+      #ch3 { background-color: #00CC66; }
+      #ch4 { background-color: #00CC99; }
+      #ch5 { background-color: #00CCCC; 
+           margin-right: 0.2em; margin-left: 0.2em; }
+      #ch6 { background-color: #0099CC; }
+      #ch7 { background-color: #0066CC; }
+      #ch8 { background-color: #0033CC; }
+      #ch9 { background-color: #0000CC; }
+      #ch10 { background-color: #3300CC; 
+           margin-right: 0.2em; margin-left: 0.2em; }
+      #ch11 { background-color: #6600CC; }
+      #ch12 { background-color: #9900CC; }
+      #ch13 { background-color: #CC00CC; }
+      #ch14 { background-color: #CC0099; }
+      #ch15 { background-color: #CC0066; 
+           margin-right: 0.2em; margin-left: 0.2em; }
+      #ch16 { background-color: #CC0033; }
+      #ch17 { background-color: #CC0000; }
+      #ch18 { background-color: #CC3300; }
+      #ch19 { background-color: #CC6600; }
+      #ch20 { background-color: #CC9900; 
+           margin-right: 0.2em; margin-left: 0.2em; }
+      #ch21 { background-color: #CCCC00; }
+      #ch22 { background-color: #99CC00; }
+      #ch23 { background-color: #66CC00; }
+      #ch24 { background-color: #33CC00; }
+      #xa { background-color:  #999999;
+           margin-right: 0.2em; margin-left: 0.2em; }
+      #xb { background-color: #666666; }
+      #xc { background-color: #333333; }
+      #sidebar { position: absolute;
+                 top: 7.5em;
+                 left: 1.5em;
+                 width: 8em;  
+                 z-index: 2; }
+      #sidebar a:link { color: black; text-decoration: none; }
+      #sidebar a:visited { color: black; text-decoration: none; }
+      #sidebar a:hover { color: #CC0000; text-decoration: none; }
+      .sidenav { font-family: Arial, sans-serif; }
+      .sidehead { font-weight: bold; padding-top: 0.7em; 
+                  color: #000066; }
+      .sidelink { padding-left: 0.5em;
+                  display: block; }
+      .instructions { font-style: italic; padding-left: 1em; }
+      .button { background-color: red;
+                font-style: italic;
+                font-family: Arial, sans-serif;
+                color: white; }
+      #indicia { font-size: small;
+                 margin-top: 1em;
+                 border-top: 1px solid #000066;
+                 padding-top: 1em; 
+                 z-index: 1; }
+      #indicia a:link { color: #000066; text-decoration: underline; }
+      #indicia a:visited { color: #000066; text-decoration: underline; }
+      #indicia a:hover { color: #000066; text-decoration: underline; }
+      .hourlinks { text-align: center; font-weight: bold; }
+
+      .excerpt { font-family: Garamond, serif; }
+      .excerpt h1, .excerpt h2, .excerpt h3, .excerpt h4, .excerpt h5, 
+                   .excerpt h6 { font-family: Arial, serif; }
+      .excerpt dt { font-weight: bold; }
+      .excerpt th { text-align: left; border-bottom: 2px solid black; 
+                    font-style: italic; font-family: Arial, sans-serif; }
+      .excerpt caption { text-align: left; font-size: larger;
+                         border-bottom: 1px solid black; 
+                         font-family: Arial, sans-serif; }
+      .excerpt caption:first-word { font-weight: bold; 
+                                    font-variant: small-caps; }
+      .excerpt table { border-bottom: 2px solid black; }
+  
+      .tip, .warning, .note { margin: 1em; border: 2px solid black; 
+                              padding: 0.5em; }
+

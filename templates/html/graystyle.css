@@ -1,0 +1,39 @@
+/*  this style sheet goes with simple.htm  */
+
+body {
+	margin: 0;
+	background-color: #666666;
+	font-family: verdana, geneva, arial, sans-serif;
+	color: #FFFFFF;
+	}
+
+.page-heading {
+	background-color: #000000;  /* background is black */
+	}
+
+.nav {
+	background-color: #0000CC;  /* background is blue */
+	}
+
+.maintext {
+	background-color: #FFFFFF;  /* background is white */
+	color: #000000;
+	font-size: 11px;
+	}
+
+.footer  {
+	background-color: #CC0000;  /* background is red */
+	font-size: 9px;
+	}
+
+a {
+	color: #CCCCCC; 
+	text-decoration: underline;
+	background-color: transparent;
+	}
+
+a:hover {
+	color: #FFFFFF; 
+	text-decoration: none; 
+	background-color: #000066;
+	}

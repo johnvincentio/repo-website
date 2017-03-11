@@ -1,0 +1,26 @@
+/* simple style sheet for students to use */
+
+body	{ background-color: #333366; 
+	  font-family: verdana, geneva, arial, sans-serif; 
+	  color: #CCCCCC; }
+
+a:link      { color: #CCCCFF; text-decoration: underline; }
+a:visited   { color: #999999; text-decoration: underline; } 
+a:active    { color: #FFFFFF; text-decoration: none; }
+a:hover     { color: #000066; text-decoration: none; 
+              background-color: #9999CC; }
+
+h1          { font-size: 2em;    font-weight: bold; }
+h2          { font-size: 1.5em;  font-weight: bold; }
+h3          { font-size: 1em;    font-weight: bold; color: #FF0000; }
+
+ul          { list-style: square; }
+
+.black      { background-color: #000000; color: #FFFFFF; font-size: 80%; }
+.gray       { background-color: #CCCCCC; color: #000000; font-size: 80%; 
+	      line-height: 150%; }
+.darkgray   { background-color: #666666; color: #CCCCFF; font-size: 80%; }
+.white      { background-color: #FFFFFF; color: #000000; font-size: 80%; }
+.darkblue   { background-color: #000066; color: #CCCCFF; font-size: 80%; }
+
+

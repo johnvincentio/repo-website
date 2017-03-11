@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="me.css">
+  <link rel="stylesheet" href="1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+<div id="template-1"></div>
+
+<script>
+
+function buildHtml(html) {
+    var start = html.indexOf('{{{');
+    console.log("start "+start);
+    if (start < 0) return html;
+    var end = html.indexOf('}}}', start);
+    if (end < 0) return html;
+
+    var replace = html.substring(start, end + 3);
+    var template = html.substring(start + 3, end);
+    console.log("replace :"+replace+": template :"+template+":");
+
+    var myHtml = document.getElementById(template).innerHTML;
+    var newHtml = html.replace(replace, myHtml);
+
+    return buildHtml(newHtml);
+}
+
+$(function() {
+    $('#template-1').html(buildHtml(document.getElementById('test-4').innerHTML));
+});
+</script>
+
+</body>
+
+<script type="text/template" id="test-4">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 col-sm-3 col-md-3">
+
+            <div class="input-group" id="adv-search">
+<!--
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+-->
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="caret"></span>
+    </button>
+
+
+                            <ul class="dropdown-menu" dropdown-menu-right role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="divider"></li>
+
+                                <li class="dropdown-submenu pull-left">
+                                    <a class="test" tabindex="-1" href="#">More options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+
+                                        <li class="dropdown-submenu pull-left">
+                                          <a href="#" tabindex="-1">Floor Lamps</a>
+                                          <ul class="dropdown-menu">
+                                              <li><a href="#">Living Room</a></li>
+                                              <li><a href="#">Bed Room</a></li>
+                                              <li><a href="#">Garden Lamps</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                            </ul>
+
+                        </div>
+
+<input type="text" class="form-control" placeholder="Search for snippets" />
+
+                        <button type="button" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+
+<script type="text/template" id="test-3">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 col-sm-3 col-md-3">
+
+            <div class="input-group" id="adv-search">
+<!--
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+-->
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="caret"></span>
+    </button>
+
+
+<!--
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+-->
+                            <ul class="dropdown-menu" dropdown-menu-right role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="divider"></li>
+
+                                <li class="dropdown-submenu pull-left">
+                                    <a class="test" tabindex="-1" href="#">More options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+
+                                        <li class="dropdown-submenu pull-left">
+                                          <a href="#" tabindex="-1">Floor Lamps</a>
+                                          <ul class="dropdown-menu">
+                                              <li><a href="#">Living Room</a></li>
+                                              <li><a href="#">Bed Room</a></li>
+                                              <li><a href="#">Garden Lamps</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                            </ul>
+
+<!--
+                            </div>
+-->
+                        </div>
+
+<input type="text" class="form-control" placeholder="Search for snippets" />
+
+                        <button type="button" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+<!--
+<input type="text" class="form-control" placeholder="Search for snippets" />
+-->
+            </div>
+
+        </div>
+    </div>
+</div>
+</script>
+
+<script type="text/template" id="test-2">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-3">
+
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+<!--
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+-->
+                            <ul class="dropdown-menu" dropdown-menu-right role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="divider"></li>
+
+                                <li class="dropdown-submenu pull-left">
+                                    <a class="test" tabindex="-1" href="#">More options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+
+                                        <li class="dropdown-submenu pull-left">
+                                          <a href="#" tabindex="-1">Floor Lamps</a>
+                                          <ul class="dropdown-menu">
+                                              <li><a href="#">Living Room</a></li>
+                                              <li><a href="#">Bed Room</a></li>
+                                              <li><a href="#">Garden Lamps</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                            </ul>
+
+<!--
+                            </div>
+-->
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</script>
+
+<!--
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="divider"></li>
+
+                                <li class="dropdown-submenu pull-left">
+                                    <a class="test" tabindex="-1" href="#">More options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+
+                                        <li class="dropdown-submenu pull-left">
+                                          <a href="#" tabindex="-1">Floor Lamps</a>
+                                          <ul class="dropdown-menu">
+                                              <li><a href="#">Living Room</a></li>
+                                              <li><a href="#">Bed Room</a></li>
+                                              <li><a href="#">Garden Lamps</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+-->
+
+<script type="text/template" id="test-1">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</script>
+
+
+<script type="text/template" id="advanced-dropdown">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="filter">Filter by</label>
+                                        <select class="form-control">
+                                            <option value="0" selected>All Snippets</option>
+                                            <option value="1">Featured</option>
+                                            <option value="2">Most popular</option>
+                                            <option value="3">Top rated</option>
+                                            <option value="4">Most commented</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contain">Author</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contain">Contains the words</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</script>
+
+
+</html>
